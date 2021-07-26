@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+.inputs {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 650px) {
+  .inputs {
+    flex-direction: column;
+  }
+}
+input::placeholder {
+  color: grey;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+input {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #94d7dd;
+}
+@media screen and (max-width: 650px) {
+  .inputs {
+    flex-direction: column;
+  }
+}
+.border {
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  border: 8px solid;
+  padding: 1rem;
+  border-image: linear-gradient(45deg, #7b4397, #dc2430) 1;
+}
+
+.btn1 {
+  margin-top: 50px !important;
+  display: block;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.3em 1.2em;
+  border: 0.3em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: grey;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgb(224, 202, 216);
+}
+@media screen and (max-width: 650px) {
+  .btn1 {
+    margin-top: 100px !important;
+  }
+}
+.btn1:hover {
+  border-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+.weekday {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px !important;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.container {
+  margin-top: 150px !important;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: #d6d6d6;
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.btn:hover {
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.21);
+  }
+  to {
+    transform: scale(1);
+  }
+}
